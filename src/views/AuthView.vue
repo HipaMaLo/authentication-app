@@ -1,5 +1,5 @@
 <template>
- <div class="container col-4 mt-2 border rounded-5 text-bg-ligth  p-5"  >
+ <div class="container col-4 mt-4 border  text-bg-ligth p-5"  >
   
 <form>
   <div class="mb-3">
@@ -11,7 +11,7 @@
     <input type="password" class="form-control" id="exampleInputPassword1" v-model="password">
   </div>
 
-  <button type="submit" class="btn btn-primary mt-2">Submit</button>
+  <button type="submit" class="btn btn-primary mt-4 w-100">Submit</button>
 
 </form>
 </div>
@@ -21,6 +21,10 @@
 import {Ref,ref} from "vue"
 let email:Ref<string> = ref('');
 let password:Ref<string> = ref('');
+
+// service : https://hfp69ilv.directus.app/auth/login
+// email   : testuser@gogodev.net
+// password: 12345678
 
 </script>
 
@@ -35,4 +39,6 @@ let password:Ref<string> = ref('');
  
   
   }
+
+
 </style>
